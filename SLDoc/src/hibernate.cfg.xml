@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+	
+		<!-- For SQL Server Connection -->
+	
+		
+      
+       <!--  <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2005Dialect</property> -->
+     	<property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="connection.url">jdbc:sqlserver://ANALYZERSERVER;databaseName=Service_Doc_Portal;instanceName=sqlexpress;</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password">sql@2018</property>
+        
+		 
+		<property name="show_sql">false</property>
+		<property name="hbm2ddl.auto">create/update</property>
+		<!-- performance bean -->
+		
+      	<mapping class="com.bean.AttachmentBean"/>
+      	<mapping class="com.bean.CustomerBean"/>
+      	<mapping class="com.bean.CustomerTypeBean"/>
+      	<mapping class="com.bean.ProductBean"/>
+      	<mapping class="com.bean.SectorBean"/>
+   		 <mapping class="com.bean.UserBean"/>
+		 <mapping class="com.bean.CustomerProductBean"/>
+		  <mapping class="com.bean.DownloadLogBean"/>
+		 
+      	
+
+      	
+      	
+		
+	</session-factory>
+
+</hibernate-configuration>
