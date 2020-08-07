@@ -3,6 +3,6 @@ package com.bean;
 public class Chirag {
 
 	
-	Chiragggggg
+	private int chirag;
 	
 }
