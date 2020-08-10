@@ -19,7 +19,7 @@ public class test {
 		String encodeText = new EncodeDecode().encodeString("3dViewer");/*YWRkQ2hpbGRTdG9uZUR5bmFtaWNhbGx5*/
 		System.out.println(encodeText);
 		
-		encodeText = "YWRkU3RvbmU=";
+		encodeText = "c3RvY2tIaXN0b3J5";
 		String decodeText = new EncodeDecode().decodeString(encodeText);
 		System.out.println(decodeText);
 		
